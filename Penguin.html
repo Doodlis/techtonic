@@ -4,11 +4,17 @@
 
     <style>
          :root {
+             --penguin-size:300px;
              --penguin-skin: gray;
              --penguin-belly:pink;
              --penguin-beak: orange;
-        }
-        
+             }
+        @media (max-width: 350px) {
+            :root {
+                --penguin-size:200px;
+                --penguin-skin: black;
+                }
+            }
         body
         {background: var(--penguin-belly, #c6faf1);}
 
