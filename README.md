@@ -15,6 +15,7 @@ lessons you struggled with below:
 - I have struggled to nest text field inside a form element,
  sipmly because I wrote: "<form action="/submit cat photo"" 
 without > before starting input line.
+
 **Update**
 - So far, so good.  
 
