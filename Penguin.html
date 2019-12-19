@@ -3,13 +3,18 @@
 
 
     <style>
-         :root
-         {--penguin-belly:pink;}
-         body 
-         {background: var(--penguin-belly, #c6faf1);}
+         :root {
+             --penguin-skin: gray;
+             --penguin-belly:pink;
+             --penguin-beak: orange;
+        }
+        
+        body
+        {background: var(--penguin-belly, #c6faf1);}
 
 
         .penguin {
+          --penguin-belly: white;
           --penguin-skin:black;
           --penguin-beak: orange;
           position: relative;
