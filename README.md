@@ -16,3 +16,7 @@ lessons you struggled with below:
  sipmly because I wrote: "<form action="/submit cat photo"" 
 without > before starting input line.  
 
+**Override Class Declarations by Styling ID Attributes**
+- "#orange-text;
+  {color:orange;}" 
+  I could not understand why this command wasn't overriding class declarations, until I saw my mistake - ";" after "#orange-text" .
