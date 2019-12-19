@@ -16,5 +16,5 @@ lessons you struggled with below:
  sipmly because I wrote: "<form action="/submit cat photo"" 
 without > before starting input line.
 **Update**
-- So far so good.  
+- So far, so good.  
 
