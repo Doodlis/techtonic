@@ -11,7 +11,8 @@ change the subject title and the lesson
 title, and fill out your answers under the
 lessons you struggled with below:
 ### Introduction to Basic HTML and HTML5
-**Say Hello to HTML Elements**
-- Your answer goes here if you struggled
-with this lesson
+**Create a Form Element**
+- I have struggled to nest text field inside a form element,
+ sipmly because I wrote: "<form action="/submit cat photo"" 
+without > before starting input line.  
 
