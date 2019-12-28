@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 
 <html>
+  <style>
+  #video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  @media screen and (max-width: 600px) {
+    #video {
+      display: none;
+    }
+  }
+  .flex-container {
+  display: flex;
+  background-color:brown;
+  }
+.nav-link {
+  background-color:beige;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  }
+  </style>
+  
 
   <head>
 
@@ -9,6 +32,50 @@
   </head>
 
   <body>
+    <header id="header">Logo goes here
+        <img id="header-img" src="https://media.istockphoto.com/vectors/hand-drawn-inspirational-label-traveling-through-wild-nature-vector-id888174040">
+      
+      <div class="flex-container">
+        <nav id="nav-bar">
+        <a class="nav-link" href="#about">Our story</a> 
+        <a class="nav-link" href="#works">Your story</a> 
+        <a class="nav-link" href="#pricing">Pricing</a> 
+        <a class="nav-link" href="#blog">Blog</a>
+      </nav> 
+      </div>
+
+
+    </header>
+  
+
+    <div id="about" class="section">Our story</div>
+
+    <div id="works" class="section">
+      Your story
+
+      <iframe
+        id="video"
+        width="800"
+        height="480"
+        src="https://www.youtube.com/embed/vfkhlLnSq7o"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    
+    <div id="pricing" class="section">Pricing</div>
+
+    <div id="blog" class="section">Blog
+
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="please enter your email">
+        <input id="submit" type="submit">
+      </form>
+    
+
+    </div>
+
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
    
@@ -16,4 +83,5 @@
       
      
   </body>
+
 </html>
