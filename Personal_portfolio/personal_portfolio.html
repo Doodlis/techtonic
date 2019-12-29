@@ -4,16 +4,60 @@
   
   <head>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="style.css">
   
   </head>
+  <style>
+    @media screen and (max-width: 600px)
+      {
+       .nav-link {background-color:green;}
+       
+     }
+     </style>
   
   <body>
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    new
+    <nav id="navbar">Navigation Menu
+      <a class="nav-link" href="#welcome-section">welcome section</a>
+      <a class="nav-link" href="#page-end">page end</a>
+    </nav>
+
+    <section id="welcome-section">
+     <h1>Welcome</h1> 
+    </section>
+
+    <section id="projects">
+      <div class="project-tile">
+        
+        <a href="https://www.pexels.com/search/cat/" target="_blank">Link to cat photos</a>
+     </div>
+
+     <div class="project-tile">
+        
+      <a href="https://www.pexels.com/search/cat/" target="_blank">Link to cat photos</a>
+   </div>
+
+   <div class="project-tile">
+        
+    <a href="https://www.pexels.com/search/cat/" target="_blank">Link to cat photos</a>
+ </div>
+
+ <div id="for-profile-link">
+   <a id="profile-link" href="https://codepen.io/Doodlis" target="_blank">Link to my Codepen profile</a>
+ </div>
+     </section>
      
+
+     <section id="page-end">Page end</section>
+     
+    
+
+
   </body>
+
 
 </html>
