@@ -1,0 +1,10 @@
+#navbar {
+  display: inline-block;
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  
+}
+ .nav-link {background-color: purple;}
