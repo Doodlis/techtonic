@@ -5,16 +5,23 @@
 //     return myList;
 // }
 
- 
- // Setup
-var outerWear = "T-Shirt";
+var changed = 0;
 
-function myOutfit() {
-  // Only change code below this line
-var outerWear = "sweater";
-
-
-  // Only change code above this line
-  return outerWear;
+function change(num) {
+  return (num + 5) / 3;
 }
+
+changed = change(10);
+
+// Setup
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed = processArg(7);
+
+ 
 
