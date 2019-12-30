@@ -2,12 +2,20 @@ function sample(){
 
 
 
-    var someAdjective = "hard!!!";
-    var myStr = "Learning to code is ";
-    myStr += someAdjective;
+    // Example
+var firstNameLength = 0;
+var firstName = "Ada";
+
+firstNameLength = firstName.length;
+
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+
+// Only change code below this line.
+
+lastNameLength = lastName.length;
 
 
-
-
-    return myStr;
+    return lastNameLength;
 }
