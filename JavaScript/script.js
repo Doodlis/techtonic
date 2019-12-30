@@ -2,8 +2,9 @@ function sample(){
 
 
 
-    var myName = "Kornelija";
-    var myStr ="My name is " + myName + " and I am well!";
+    var someAdjective = "hard!!!";
+    var myStr = "Learning to code is ";
+    myStr += someAdjective;
 
 
 
