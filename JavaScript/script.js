@@ -2,8 +2,8 @@ function sample(){
 
 
 
-    var myStr = "This is the first sentence." 
-    myStr += " This is the second sentence.";
+    var myName = "Kornelija";
+    var myStr ="My name is " + myName + " and I am well!";
 
 
 
