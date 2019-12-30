@@ -12,13 +12,12 @@ var firstName = "Ada";
 
 firstLetterOfFirstName = firstName[0];
 
-// Setup
-var firstLetterOfLastName = "";
-var lastName = "Lovelace";
+/// Setup
+var myStr = "Jello World";
 
 // Only change code below this line
-firstLetterOfLastName = lastName[0];
 
+myStr = "Hello World"; // Fix Me
 
-    return firstLetterOfLastName;
+    return myStr;
 }
