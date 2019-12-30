@@ -12,12 +12,15 @@ var firstName = "Ada";
 
 firstLetterOfFirstName = firstName[0];
 
-/// Setup
-var myStr = "Jello World";
+// Example
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
 
-// Only change code below this line
+// Setup
+var lastName = "Lovelace";
 
-myStr = "Hello World"; // Fix Me
+// Only change code below this line.
+var thirdLetterOfLastName = lastName[2];
 
-    return myStr;
+    return thirdLetterOfLastName;
 }
