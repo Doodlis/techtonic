@@ -12,16 +12,14 @@ var firstName = "Ada";
 
 firstLetterOfFirstName = firstName[0];
 
-// Example
-var firstName = "Ada";
-var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
 
-// Setup
-var lastName = "Lovelace";
-
-// Only change code below this line
-var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+var wordBlanks = "When I was little I had a " + myNoun + ". Her name was Nika and she was very " + myAdjective + " and fluffy. Nika " + myVerb + " after all the  children in the neighborghood whenerver she had a chance. Kids had to sprint really " + myAdverb + " to escape her loving face-licks."; // Only change this line;
 
 
-    return secondToLastLetterOfLastName;
+
+    return wordBlanks;
 }
