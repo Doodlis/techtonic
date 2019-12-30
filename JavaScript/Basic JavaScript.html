@@ -8,25 +8,18 @@
             console.log(sample());
         })();
 
-// Declare your variable here
-var myGlobal = 10;
+        function myLocalScope() {
+   var myVar = 'use strict'; // you shouldn't need to edit this line
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-oopsGlobal = 5;
+  console.log(myVar);
 }
+myLocalScope();
 
-// Only change code above this line
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+
+
+// Now remove the console log line to pass the test
 
         
     </script>
