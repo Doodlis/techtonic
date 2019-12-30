@@ -2,11 +2,15 @@ function sample(){
 
 
 // Example
-var ourArray = [["the universe", 42], ["everything", 101010]];
+var ourArray = [50,60,70];
+var ourData = ourArray[0]; // equals 50
+
+// Setup
+var myArray = [50,60,70];
 
 // Only change code below this line.
-var myArray = [["Arsenal", 5], ["Liverpool", 7]];
+var myData = myArray[0]
 
 
-    return myArray;
+    return myData;
 }
