@@ -1,16 +1,11 @@
 function sample(){
 
-
-// Example
-var ourArray = [18,64,99];
-ourArray[1] = 45; // ourArray now equals [18,45,99].
-
 // Setup
-var myArray = [18,64,99];
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 
 // Only change code below this line.
-myArray[0]=45;
+var myData = myArray[2][1];
 
 
-    return myArray;
+    return myData;
 }
