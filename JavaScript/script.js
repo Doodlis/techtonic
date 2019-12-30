@@ -1,8 +1,20 @@
-function sample(){
+// function sample(){
 
-    var myList = [["Butter", 2], ["Milk", 1], ["Coffee", 4], ["Bread", 7], ["Salmon", 15]];
+//     var myList = [0]
+
+//     return myList;
+// }
+
+ 
+ // Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+var outerWear = "sweater";
 
 
-    return myList;
+  // Only change code above this line
+  return outerWear;
 }
 
