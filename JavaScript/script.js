@@ -14,13 +14,14 @@ firstLetterOfFirstName = firstName[0];
 
 // Example
 var firstName = "Ada";
-var secondLetterOfFirstName = firstName[1];
+var lastLetterOfFirstName = firstName[firstName.length - 1];
 
 // Setup
 var lastName = "Lovelace";
 
 // Only change code below this line.
-var thirdLetterOfLastName = lastName[2];
+var lastLetterOfLastName = lastName[lastName.length -1];
 
-    return thirdLetterOfLastName;
+
+    return lastLetterOfLastName;
 }
