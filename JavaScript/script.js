@@ -6,16 +6,19 @@ function sample(){
 var firstNameLength = 0;
 var firstName = "Ada";
 
-firstNameLength = firstName.length;
+// Example
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+
+firstLetterOfFirstName = firstName[0];
 
 // Setup
-var lastNameLength = 0;
+var firstLetterOfLastName = "";
 var lastName = "Lovelace";
 
-// Only change code below this line.
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
 
-lastNameLength = lastName.length;
 
-
-    return lastNameLength;
+    return firstLetterOfLastName;
 }
