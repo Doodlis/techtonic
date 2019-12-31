@@ -448,3 +448,12 @@ function  replacingIfElseChainsWithSwitch() {
       // Change this value to test
       return chainToSwitch(7);
 }  
+function returningBooleanValuesFromFunctions() {
+    function isLess(a, b) {
+        // Fix this code
+        return a < b; 
+      }
+      
+      // Change these values to test
+      return isLess(15, 10);
+}
