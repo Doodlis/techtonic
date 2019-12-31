@@ -1,27 +1,35 @@
-// function sample(){
+function nextInLineAssignment(){
 
-//     var myList = [0]
+    function nextInLine(arr, item) {
+        arr.push(item);
 
-//     return myList;
-// }
-
-var changed = 0;
-
-function change(num) {
-  return (num + 5) / 3;
+        return arr.shift(); 
+      }
+      
+      // Test Setup
+      var testArr = [1,2,3,4,5];
+      
+      // Display Code
+      console.log("Before: " + JSON.stringify(testArr));
+      console.log(nextInLine(testArr, 6)); // Modify this line to test
+      console.log("After: " + JSON.stringify(testArr));
 }
 
-changed = change(10);
+function understandingBooleanValues(){
+    
+    function welcomeToBooleans() {
 
-// Setup
-var processed = 0;
+        // Only change code below this line.
+      
+        return true; // Change this line
+      
+        // Only change code above this line.
+      }   
 
-function processArg(num) {
-  return (num + 3) / 5;
+      console.log(welcomeToBooleans());
 }
 
-// Only change code below this line
-processed = processArg(7);
+
 
  
 
