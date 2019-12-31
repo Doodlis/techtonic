@@ -740,32 +740,95 @@ function accessingNestedObjects() {
 
     var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
 
-return gloveBoxContents;
+    return gloveBoxContents;
 }
 
-function accessingNestedArrays(){
+function accessingNestedArrays() {
     // Setup
-var myPlants = [
-    {
-      type: "flowers",
-      list: [
-        "rose",
-        "tulip",
-        "dandelion"
-      ]
-    },
-    {
-      type: "trees",
-      list: [
-        "fir",
-        "pine",
-        "birch"
-      ]
+    var myPlants = [
+        {
+            type: "flowers",
+            list: [
+                "rose",
+                "tulip",
+                "dandelion"
+            ]
+        },
+        {
+            type: "trees",
+            list: [
+                "fir",
+                "pine",
+                "birch"
+            ]
+        }
+    ];
+
+    // Only change code below this line
+
+    var secondTree = myPlants[1].list[1]; // Change this line
+    return secondTree;
+}
+
+function recordCollection() {
+    // Setup
+    var collection = {
+        2548: {
+            album: "Slippery When Wet",
+            artist: "Bon Jovi",
+            tracks: [
+                "Let It Rock",
+                "You Give Love a Bad Name"
+            ]
+        },
+        2468: {
+            album: "1999",
+            artist: "Prince",
+            tracks: [
+                "1999",
+                "Little Red Corvette"
+            ]
+        },
+        1245: {
+            artist: "Robert Palmer",
+            tracks: []
+        },
+        5439: {
+            album: "ABBA Gold"
+        }
+    };
+
+    // Only change code below this line
+    function updateRecords(id, prop, value) {
+        var album = collection[id];
+
+        if (!album) {
+            return collection;
+        }
+
+        if (prop === "tracks") {
+            if (!value || value.length == 0) {
+                delete album[prop];
+            }
+            else if (!album[prop]) {
+                album[prop] = new Array();
+                album[prop].push(value);
+            }
+            else {
+                album[prop].push(value);
+            }
+        }
+        else {
+            if (!value || value.length == 0)
+                delete album[prop];
+            else
+                album[prop] = value;
+        }
+
+        return collection;
     }
-  ];
-  
-  // Only change code below this line
-  
-  var secondTree = myPlants[1].list[1]; // Change this line
-  return secondTree;
+
+    // Alter values below to test your code
+     updateRecords(5439, "artist", "ABBA");
+
 }
