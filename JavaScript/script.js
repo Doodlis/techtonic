@@ -95,5 +95,17 @@ function practiceComparingDifferentValues (){
 // Change this value to test
 compareEquality(10, "10");
 
+}
 
+function comparisonWithTheInequalityOperator() {
+// Setup
+function testNotEqual(val) {
+    if (val != 99) { // Change this line
+      return "Not Equal";
+    }
+    return "Equal";
+  }
+  
+  // Change this value to test
+  testNotEqual("99");
 }
