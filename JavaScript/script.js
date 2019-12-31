@@ -510,3 +510,22 @@ function countingCards() {
     // Note: Only the last will display
     return cc("A"), cc(2), cc(6), cc(10), cc(5);
 }
+function buildJavaScriptObjects() {
+    // Example
+    var ourDog = {
+        "name": "Camper",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["everything!"]
+    };
+
+    // Only change code below this line.
+
+    var myDog = {
+        "name": "Nika",
+        "legs": 10,
+        "tails": 5,
+        "friends": ["people", "birds", "horses"]
+    }; 
+    return undefined;
+} 
