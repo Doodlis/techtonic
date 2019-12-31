@@ -83,6 +83,7 @@ function comparisonWithTheStrictEqualityOperator() {
     return testStrict("7");
 
 }
+
 function practiceComparingDifferentValues() {
     // Setup
     function compareEquality(a, b) {
@@ -225,6 +226,7 @@ function comparisonsWithTheLogicalOrOperator() {
     // Change this value to test
     return testLogicalOr(25);
 }
+
 function introducingElseStatements() {
     function testElse(val) {
         var result = "";
@@ -302,6 +304,7 @@ function chainingIfElseStatements() {
     // Change this value to test
     return testSize(25);
 }
+
 function golfCode() {
     var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
     function golfScore(par, strokes) {
@@ -358,6 +361,7 @@ function selectingFromManyOptionsWithSwitchStatements() {
     // Change this value to test
     return caseInSwitch(4);
 }
+
 function addingADefaultOptionInSwitchStatements() {
     function switchOfStuff(val) {
         var answer = "";
@@ -448,6 +452,7 @@ function replacingIfElseChainsWithSwitch() {
     // Change this value to test
     return chainToSwitch(7);
 }
+
 function returningBooleanValuesFromFunctions() {
     function isLess(a, b) {
         // Fix this code
@@ -510,6 +515,7 @@ function countingCards() {
     // Note: Only the last will display
     return cc("A"), cc(2), cc(6), cc(4), cc(5);
 }
+
 function buildJavaScriptObjects() {
     // Example
     var ourDog = {
@@ -527,8 +533,9 @@ function buildJavaScriptObjects() {
         "tails": 5,
         "friends": ["people", "birds", "horses"]
     };
-    return undefined;
+    return myDog["friends"];
 }
+
 function accessingObjectPropertiesWithDotNotation() {
     // Setup
     var testObj = {
@@ -541,33 +548,58 @@ function accessingObjectPropertiesWithDotNotation() {
 
     var hatValue = testObj.hat;      // Change this line
     var shirtValue = testObj.shirt;    // Change this line
-return [hatValue, shirtValue];
+    return [hatValue, shirtValue];
 }
+
 function accessingObjectPropertiesWithBracketNotation() {
     // Setup
-var testObj = {
-    "an entree": "hamburger",
-    "my side": "veggies",
-    "the drink": "water"
-  };
-  
-  // Only change code below this line
-  
-  var entreeValue = testObj["an entree"];   // Change this line
-  var drinkValue = testObj["the drink"];    // Change this line
-  return [entreeValue, drinkValue];
+    var testObj = {
+        "an entree": "hamburger",
+        "my side": "veggies",
+        "the drink": "water"
+    };
+
+    // Only change code below this line
+
+    var entreeValue = testObj["an entree"];   // Change this line
+    var drinkValue = testObj["the drink"];    // Change this line
+    return [entreeValue, drinkValue];
 }
+
 function AccessingObjectPropertiesWithVariables() {
     // Setup
-var testObj = {
-    12: "Namath",
-    16: "Montana",
-    19: "Unitas"
-  };
-  
-  // Only change code below this line;
-  
-  var playerNumber = 16;       // Change this Line
-  var player = testObj[playerNumber];  
-  return player;
+    var testObj = {
+        12: "Namath",
+        16: "Montana",
+        19: "Unitas"
+    };
+
+    // Only change code below this line;
+
+    var playerNumber = 16;       // Change this Line
+    var player = testObj[playerNumber];
+    return player;
 }
+
+function updatingObjectProperties(){
+    var ourDog = {
+        "name": "Camper",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["everything!"]
+      };
+      
+      ourDog.name = "Happy Camper";
+      
+      // Setup
+      var myDog = {
+        "name": "Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"]
+      };
+      myDog.name = "Happy Coder"; 
+      // Only change code below this line.
+      return myDog.name;
+}
+
