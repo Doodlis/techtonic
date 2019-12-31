@@ -508,7 +508,7 @@ function countingCards() {
 
     // Add/remove calls to test your function.
     // Note: Only the last will display
-    return cc("A"), cc(2), cc(6), cc(10), cc(5);
+    return cc("A"), cc(2), cc(6), cc(4), cc(5);
 }
 function buildJavaScriptObjects() {
     // Example
@@ -526,6 +526,20 @@ function buildJavaScriptObjects() {
         "legs": 10,
         "tails": 5,
         "friends": ["people", "birds", "horses"]
-    }; 
+    };
     return undefined;
-} 
+}
+function accessingObjectPropertiesWithDotNotation() {
+    // Setup
+    var testObj = {
+        "hat": "ballcap",
+        "shirt": "jersey",
+        "shoes": "cleats"
+    };
+
+    // Only change code below this line
+
+    var hatValue = testObj.hat;      // Change this line
+    var shirtValue = testObj.shirt;    // Change this line
+return [hatValue, shirtValue];
+}
