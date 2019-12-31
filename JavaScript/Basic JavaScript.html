@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 
 <html>
-    <script src="script.js"></script>
-    
-    <script>
-        (function(){
-            nextInLineAssignment();
-            understandingBooleanValues();
-            useConditionalLogicwithIfStatements();
-            comparisonWithTheEqualityOperator();
-            comparisonWithTheStrictEqualityOperator();
-            practiceComparingDifferentValues ();
-            comparisonWithTheInequalityOperator();
-           comparisonWithTheStrictInequalityOperator();
-           comparisionWithGreaterThanOperator();
-           comparisonWithTheGreaterThanOrEqualToOperator();
-           comparisonWithTheLessThanOperator();
-           comparisonWithTheLessThanOrEqualToOperator();
-           comparisonsWithTheLogicalAndOperator();
-            
-        })();
+<script src="script.js"></script>
 
-       
+<body>
+    <div id="container"></div>
+</body>
 
-    
+<script>
+    (function () {
+        nextInLineAssignment();
 
-        
-    </script>
+        var exerciseList = [
+            "understandingBooleanValues()",
+            "useConditionalLogicwithIfStatements()",
+            "comparisonWithTheEqualityOperator()",
+            "comparisonWithTheStrictEqualityOperator()",
+            "practiceComparingDifferentValues()",
+            "comparisonWithTheInequalityOperator()",
+            "comparisonWithTheStrictInequalityOperator()",
+            "comparisionWithGreaterThanOperator()",
+            "comparisonWithTheGreaterThanOrEqualToOperator()",
+            "comparisonWithTheLessThanOperator()",
+            "comparisonWithTheLessThanOrEqualToOperator()",
+            "comparisonsWithTheLogicalAndOperator()",
+            "comparisonsWithTheLogicalOrOperator()"
+        ]
+
+        exerciseList.forEach(function (exercise) {
+            var container = document.querySelector('#container');
+            container.innerHTML += "<div>Exercise " + exercise + " ANSWER IS: " + eval(exercise) + "</div>";
+            console.log("Exercise " + exercise + " ANSWER IS: " + eval(exercise));
+        });
+
+    })();  
+</script>
+
+
 
 
 </html>

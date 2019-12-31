@@ -26,7 +26,7 @@ function understandingBooleanValues() {
         // Only change code above this line.
     }
 
-    console.log(welcomeToBooleans());
+    return welcomeToBooleans();
 }
 
 function useConditionalLogicwithIfStatements() {
@@ -52,7 +52,7 @@ function useConditionalLogicwithIfStatements() {
     }
 
     // Change this value to test
-    trueOrFalse("true");
+    return trueOrFalse("true");
 }
 
 function comparisonWithTheEqualityOperator() {
@@ -66,7 +66,7 @@ function comparisonWithTheEqualityOperator() {
     }
 
     // Change this value to test
-    testEqual(10);
+    return testEqual(10);
 
 }
 
@@ -80,7 +80,7 @@ function comparisonWithTheStrictEqualityOperator() {
     }
 
     // Change this value to test
-    testStrict("7");
+    return testStrict("7");
 
 }
 function practiceComparingDifferentValues() {
@@ -93,7 +93,7 @@ function practiceComparingDifferentValues() {
     }
 
     // Change this value to test
-    compareEquality(10, "10");
+    return compareEquality(10, "10");
 
 }
 
@@ -107,7 +107,7 @@ function comparisonWithTheInequalityOperator() {
     }
 
     // Change this value to test
-    testNotEqual("99");
+    return testNotEqual("99");
 }
 
 function comparisonWithTheStrictInequalityOperator() {
@@ -120,7 +120,7 @@ function comparisonWithTheStrictInequalityOperator() {
     }
 
     // Change this value to test
-    testStrictNotEqual(10);
+    return testStrictNotEqual(10);
 }
 
 function comparisionWithGreaterThanOperator() {
@@ -137,7 +137,7 @@ function comparisionWithGreaterThanOperator() {
       }
       
       // Change this value to test
-      testGreaterThan(3);
+      return testGreaterThan(3);
 }
 
 function comparisonWithTheGreaterThanOrEqualToOperator() {
@@ -154,7 +154,7 @@ function comparisonWithTheGreaterThanOrEqualToOperator() {
       }
       
       // Change this value to test
-      testGreaterOrEqual(10);
+      return testGreaterOrEqual(10);
 }
 
 function comparisonWithTheLessThanOperator() {
@@ -171,7 +171,7 @@ function comparisonWithTheLessThanOperator() {
       }
       
       // Change this value to test
-      testLessThan(28);
+      return testLessThan(28);
 }
 
 function comparisonWithTheLessThanOrEqualToOperator() {
@@ -188,7 +188,7 @@ function comparisonWithTheLessThanOrEqualToOperator() {
       }
       
       // Change this value to test
-      testLessOrEqual(10);
+      return testLessOrEqual(10);
       
 }
 
@@ -205,6 +205,23 @@ function comparisonsWithTheLogicalAndOperator() {
       }
       
       // Change this value to test
-      testLogicalAnd(25);
+      return testLogicalAnd(25);
       
+}
+
+function comparisonsWithTheLogicalOrOperator() {
+    function testLogicalOr(val) {
+        // Only change code below this line
+      
+        if (val < 10 || val > 20) {
+          return "Outside";
+        }
+      
+      
+        // Only change code above this line
+        return "Inside";
+      }
+      
+      // Change this value to test
+      return testLogicalOr(25);
 }
