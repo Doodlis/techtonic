@@ -557,3 +557,17 @@ var testObj = {
   var drinkValue = testObj["the drink"];    // Change this line
   return [entreeValue, drinkValue];
 }
+function AccessingObjectPropertiesWithVariables() {
+    // Setup
+var testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+  };
+  
+  // Only change code below this line;
+  
+  var playerNumber = 16;       // Change this Line
+  var player = testObj[playerNumber];  
+  return player;
+}
