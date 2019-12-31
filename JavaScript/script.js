@@ -83,29 +83,42 @@ function comparisonWithTheStrictEqualityOperator() {
     testStrict("7");
 
 }
-function practiceComparingDifferentValues (){
+function practiceComparingDifferentValues() {
     // Setup
     function compareEquality(a, b) {
-    if (a === b) { // Change this line
-        return "Equal";
+        if (a === b) { // Change this line
+            return "Equal";
+        }
+        return "Not Equal";
     }
-    return "Not Equal";
-}
 
-// Change this value to test
-compareEquality(10, "10");
+    // Change this value to test
+    compareEquality(10, "10");
 
 }
 
 function comparisonWithTheInequalityOperator() {
-// Setup
-function testNotEqual(val) {
-    if (val != 99) { // Change this line
-      return "Not Equal";
+    // Setup
+    function testNotEqual(val) {
+        if (val != 99) { // Change this line
+            return "Not Equal";
+        }
+        return "Equal";
     }
-    return "Equal";
-  }
-  
-  // Change this value to test
-  testNotEqual("99");
+
+    // Change this value to test
+    testNotEqual("99");
+}
+
+function comparisonWithTheStrictInequalityOperator() {
+    // Setup
+    function testStrictNotEqual(val) {
+        if (val !== 17) { // Change this line
+            return "Not Equal";
+        }
+        return "Equal";
+    }
+
+    // Change this value to test
+    testStrictNotEqual(10);
 }
