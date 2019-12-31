@@ -829,6 +829,22 @@ function recordCollection() {
     }
 
     // Alter values below to test your code
-     updateRecords(5439, "artist", "ABBA");
+    updateRecords(5439, "artist", "ABBA");
+    
 
 }
+
+function iteratewithJavaScriptWhileLoops() {
+    // Setup
+    var myArray = [];
+    var i = 0;
+
+    while (i < 6) {
+        myArray.push(5 - i);
+        i++;
+    }
+
+    return myArray;
+    // Only change code below this line.
+}
+
