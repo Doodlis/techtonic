@@ -72,16 +72,28 @@ function comparisonWithTheEqualityOperator() {
 
 function comparisonWithTheStrictEqualityOperator() {
     // Setup
-function testStrict(val) {
-    if (val === 7) { // Change this line
-      return "Equal";
+    function testStrict(val) {
+        if (val === 7) { // Change this line
+            return "Equal";
+        }
+        return "Not Equal";
+    }
+
+    // Change this value to test
+    testStrict("7");
+
+}
+function practiceComparingDifferentValues (){
+    // Setup
+    function compareEquality(a, b) {
+    if (a === b) { // Change this line
+        return "Equal";
     }
     return "Not Equal";
-  }
-  
-  // Change this value to test
-  testStrict("7");
-  
 }
 
+// Change this value to test
+compareEquality(10, "10");
 
+
+}
