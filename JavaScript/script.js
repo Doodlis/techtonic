@@ -322,12 +322,38 @@ function golfCode() {
             return names[6];
         }
 
-
-
         // Only change code above this line
     }
 
     // Change these values to test
     return golfScore(9, 4);
 
+}
+
+function selectingFromManyOptionsWithSwitchStatements() {
+    function caseInSwitch(val) {
+        var answer = "";
+        // Only change code below this line
+        switch (val) {
+            case 1:
+                answer = "alpha";
+                break;
+            case 2:
+                answer = "beta";
+                break;
+            case 3:
+                answer = "gamma";
+                break;
+            case 4:
+                answer = "delta";
+                break;
+        }
+
+
+        // Only change code above this line
+        return answer;
+    }
+
+    // Change this value to test
+    caseInSwitch(4);
 }
