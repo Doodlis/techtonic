@@ -690,5 +690,35 @@ function testingObjectsForProperties() {
         }
     }
     // Test your code by modifying these values
-    return checkObj("gift");
+    return checkObj("pet");
+}
+
+function manipulatingComplexObjects() {
+    var myMusic = [
+        {
+            "artist": "Billy Joel",
+            "title": "Piano Man",
+            "release_year": 1973,
+            "formats": [
+                "CD",
+                "8T",
+                "LP"
+            ],
+            "gold": true
+        }
+        ,
+        // Add record here
+        {
+            "artist": "Queen",
+            "title": "Bohemian Rapsody",
+            "release_year": 1989,
+            "formats": [
+                "CD",
+                "DVD",
+                "LP"
+            ],
+            "gold": true
+        }
+    ];
+    return undefined
 }
