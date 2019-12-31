@@ -900,68 +900,116 @@ function countBackwardsWithAForLoop() {
 
 }
 
-function iterateThroughAnArrayWithAForLoop(){
+function iterateThroughAnArrayWithAForLoop() {
     // Example
-var ourArr = [ 9, 10, 11, 12];
-var ourTotal = 0;
+    var ourArr = [9, 10, 11, 12];
+    var ourTotal = 0;
 
-for (var i = 0; i < ourArr.length; i++) {
-  ourTotal += ourArr[i];
-}
+    for (var i = 0; i < ourArr.length; i++) {
+        ourTotal += ourArr[i];
+    }
 
-// Setup
-var myArr = [ 2, 3, 4, 5, 6];
+    // Setup
+    var myArr = [2, 3, 4, 5, 6];
 
-// Only change code below this line
+    // Only change code below this line
 
-var total = 0;
+    var total = 0;
 
-for (var i = 0; i < myArr.length; i++) {
-  total += myArr[i];
-}
+    for (var i = 0; i < myArr.length; i++) {
+        total += myArr[i];
+    }
 }
 function nestingForLoops() {
     function multiplyAll(arr) {
         var product = 1;
         // Only change code below this line
-      for (var i = 0; i < arr.length; i++) {
-      
-        for (var j = 0;  j < arr[i].length; j++){
-          product = product * arr[i][j];
+        for (var i = 0; i < arr.length; i++) {
+
+            for (var j = 0; j < arr[i].length; j++) {
+                product = product * arr[i][j];
+            }
+
         }
-      
-      }
         // Only change code above this line
         return product;
-      }
-      
-      // Modify values below to test your code
-      multiplyAll([[1,2],[3,4],[5,6,7]]);
-      
+    }
+
+    // Modify values below to test your code
+    multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
 }
 
 function iterateWithJavaScriptDoWhileLoops() {// Setup
     var myArray = [];
     var i = 10;
-    
+
     // Only change code below this line
     do {
         myArray.push(i);
         i++;
-    }while (i < 1)
+    } while (i < 1)
+}
+
+function replaceLoopsUsingRecursion() {
+    function sum(arr, n) {
+        // Only change code below this line
+        if (n <= 0) {
+            return arr[0];
+        }
+        else {
+            return sum(arr, n - 1) + arr[n]
+
+        }
+        // Only change code above this line
     }
 
-    function replaceLoopsUsingRecursion() {
-        function sum(arr, n) {
-            // Only change code below this line
-          if (n <= 0) {
-            return arr[0];
-          } 
-            else {
-              return sum(arr, n - 1) + arr[n]
-          
-          }
-            // Only change code above this line
-          }
-          
+}
+
+function profileLookup() {//Setup
+    var contacts = [
+        {
+            "firstName": "Akira",
+            "lastName": "Laine",
+            "number": "0543236543",
+            "likes": ["Pizza", "Coding", "Brownie Points"]
+        },
+        {
+            "firstName": "Harry",
+            "lastName": "Potter",
+            "number": "0994372684",
+            "likes": ["Hogwarts", "Magic", "Hagrid"]
+        },
+        {
+            "firstName": "Sherlock",
+            "lastName": "Holmes",
+            "number": "0487345643",
+            "likes": ["Intriguing Cases", "Violin"]
+        },
+        {
+            "firstName": "Kristian",
+            "lastName": "Vos",
+            "number": "unknown",
+            "likes": ["JavaScript", "Gaming", "Foxes"]
+        }
+    ];
+
+    function lookUpProfile(name, prop) {
+
+        for (var i = 0; i < contacts.length; i++) {
+            var contact = contacts[i];
+
+            if (name == contact.firstName) {
+                if (contact[prop] != null)
+                    return contact[prop];
+                else
+                    return "No such property";
+            }
+        }
+
+        return "No such contact";
     }
+
+    // Change these values to test your function
+    lookUpProfile("Akira", "likes");
+}
