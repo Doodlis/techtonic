@@ -263,17 +263,42 @@ function introducingElseIfStatements() {
     return testElseIf(10);
 
 }
+
 function logicalOrderInIfElseStatements() {
     function orderMyLogic(val) {
         if (val < 5) {
-          return "Less than 5";
+            return "Less than 5";
         } else if (val < 10) {
-          return "Less than 10";
+            return "Less than 10";
         } else {
-          return "Greater than or equal to 10";
+            return "Greater than or equal to 10";
         }
+    }
+
+    // Change this value to test
+    return orderMyLogic(7);
+
+}
+
+function chainingIfElseStatements() {
+    function testSize(num) {
+        // Only change code below this line
+      if (num < 5) {
+        return "Tiny"
+      } 
+      else if (num < 10) {
+        return "Small"
+      } 
+      else if (num < 15) {
+        return "Medium"
+      } 
+      else if (num < 20) {
+        return "Large"
+      }
+      else 
+        return "Huge"
       }
       
       // Change this value to test
-      return orderMyLogic(7);
+      return testSize(25);
 }
