@@ -326,3 +326,10 @@ thermos.temperature = 26;
 temp = thermos.temperature; // 26 in C
 
 }
+function createAModuleScript () {
+    <html>
+  <body>
+  <script type="module" src="index.js"></script>
+  </body>
+</html>
+}
