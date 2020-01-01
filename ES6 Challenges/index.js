@@ -31,9 +31,17 @@ stringFunctions.lowercaseString("WORLD!");
 }
 
 
-function () {
+function exportADefaultExport() {
     export default function subtract(x, y) {
         return x - y;
       }
       
+}
+
+function importADefaultExport() {
+    import subtract from "./math_functions.js"
+    // add code above this line
+    
+    subtract(7,4);
+    
 }
