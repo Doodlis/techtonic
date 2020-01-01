@@ -67,10 +67,11 @@ function mutateAnArrayDeclaredWithConst() {
 
 
         // change code above this line
-    }
-    return editInPlace();
+    } editInPlace();
+    return s;
 
 }
+
 function preventObjectMutation() {
     function freezeObj() {
         'use strict';
@@ -89,5 +90,9 @@ function preventObjectMutation() {
         return MATH_CONSTANTS.PI;
       }
       const PI = freezeObj();
-      
+      return freezeObj();
 }
+
+function useArrowFunctionsToWriteConciseAnonymousFunctions() {
+    const magic = () => new Date();
+} ;
