@@ -6,13 +6,18 @@ function nextInLineAssignment() {
         return arr.shift();
     }
 }
-function testFunction() {
+function differencesBetweenTheVarAndLetKeywords() {
 
-    function test(a, b) {
-        if (a > b) {
-            return "yes";
-        }
-        return "no";
+    let catName;
+    let quote;
+    function catTalk() {
+        "use strict";
+
+
+        catName = "Oliver";
+        quote = catName + " says Meow!";
+
     }
-    return test(7, 6)
+    catTalk();
+    return quote;
 }
