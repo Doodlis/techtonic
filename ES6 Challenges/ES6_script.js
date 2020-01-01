@@ -106,4 +106,12 @@ function writeArrowFunctionsWithParameters() {
  return myConcat([1, 2], [3, 4, 5]);
   
 }
+function setDefaultParametersForYourFunctions() {
+    const increment = (number, value = 1) => number + value;
+
+console.log(increment(5, 2)); // returns 7
+console.log(increment(5)); // returns 6
+
+return increment(5);
+}
 
