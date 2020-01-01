@@ -33,7 +33,7 @@ function compareScopesOfTheVarAndLetKeywords() {
         console.log('Function scope i is: ', i);
         return i;
     }
-return checkScope();
+    return checkScope();
 }
 
 function declareAReadOnlyVariableWithTheConstKeyword() {
@@ -50,6 +50,24 @@ function declareAReadOnlyVariableWithTheConstKeyword() {
         // change code above this line
 
     }
-     return printManyTimes("freeCodeCamp");
+    return printManyTimes("freeCodeCamp");
+
+}
+
+function mutateAnArrayDeclaredWithConst() {
+    const s = [5, 7, 2];
+    function editInPlace() {
+        'use strict';
+        // change code below this line
+
+        s[0] = 2;
+        s[1] = 5;
+        s[2] = 7;
+
+
+
+        // change code above this line
+    }
+    return editInPlace();
 
 }
