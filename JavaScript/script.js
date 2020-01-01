@@ -1097,6 +1097,22 @@ function useMultipleConditionalOperators() {
             
     }
     
-    checkSign(10);
-    
+    checkSign(10);   
+}
+
+function useRecursiontoCreateCountdown(){
+    //Only change code below this line
+function countdown(n){
+    if(n < 1){
+      return [];
+    }
+    else{
+      var arr = countdown(n-1)
+      arr.unshift(n)
+      return arr;
+    }
+   
+  }
+  console.log(countdown(5)); // [5, 4, 3, 2, 1]
+  
 }
