@@ -1071,11 +1071,20 @@ function useTheParseIntFunction() {
 
 }
 
-function useTheParseIntFunctionWithARadix(){ 
+function useTheParseIntFunctionWithARadix() {
     function convertToInteger(str) {
         return parseInt(str, 2);
     }
-    
+
     convertToInteger("10011");
-    
+
+}
+
+function useTheConditionalOperator() {
+    function checkEqual(a, b) {
+        return a == b ? "Equal" : "Not Equal";
+    }
+
+    checkEqual(1, 2);
+
 }
