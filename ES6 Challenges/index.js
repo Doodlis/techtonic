@@ -45,3 +45,9 @@ function importADefaultExport() {
     subtract(7,4);
     
 }
+
+function createAJavaScriptPromise() {
+    const makeServerRequest = new Promise((resolve, reject) => {
+
+    });
+}
