@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<script src="ES6_script.js"></script>
+
+<body>
+    <div id="container"></div>
+</body>
+
+<script>
+    (function () {
+        nextInLineAssignment();
+
+        var exerciseList = [
+            "testFunction()"
+            
+
+        ]
+
+        exerciseList.forEach(function (exercise) {
+            var container = document.querySelector('#container');
+            container.innerHTML += "<div>Exercise " + exercise + " ANSWER IS: " + eval(exercise) + "</div>";
+            console.log("Exercise " + exercise + " ANSWER IS: " + eval(exercise));
+        });
+
+    })();  
+
+
+</script>
+
+
+
+
+</html>
