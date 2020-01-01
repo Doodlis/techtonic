@@ -166,8 +166,9 @@ function useDestructuringAssignmentToAssignVariablesFromObjects() {
       
       // change code above this line
       
-      console.log(yesterday) // should be not defined
-      console.log(highToday); // should be 77
-      console.log(highTomorrow); // should be 80
-      
+    //   console.log(yesterday) // should be not defined
+    //   console.log(highToday); // should be 77
+    //   console.log(highTomorrow); // should be 80
+      return HIGH_TEMPERATURES.today;
 }
+
