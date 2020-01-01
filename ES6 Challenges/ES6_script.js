@@ -76,81 +76,81 @@ function preventObjectMutation() {
     function freezeObj() {
         'use strict';
         const MATH_CONSTANTS = {
-          PI: 3.14
+            PI: 3.14
         };
         // change code below this line
-      Object.freeze(MATH_CONSTANTS);
-      
+        Object.freeze(MATH_CONSTANTS);
+
         // change code above this line
         try {
-          MATH_CONSTANTS.PI = 99;
-        } catch(ex) {
-          console.log(ex);
+            MATH_CONSTANTS.PI = 99;
+        } catch (ex) {
+            console.log(ex);
         }
         return MATH_CONSTANTS.PI;
-      }
-      const PI = freezeObj();
-      return freezeObj();
+    }
+    const PI = freezeObj();
+    return freezeObj();
 }
 
 function useArrowFunctionsToWriteConciseAnonymousFunctions() {
     const magic = () => new Date();
-} 
+}
 
 function writeArrowFunctionsWithParameters() {
     const myConcat = (arr1, arr2) => arr1.concat(arr2);
 
-// test your code
- console.log(myConcat([1, 2], [3, 4, 5]));
- 
- return myConcat([1, 2], [3, 4, 5]);
-  
+    // test your code
+    console.log(myConcat([1, 2], [3, 4, 5]));
+
+    return myConcat([1, 2], [3, 4, 5]);
+
 }
 function setDefaultParametersForYourFunctions() {
     const increment = (number, value = 1) => number + value;
 
-console.log(increment(5, 2)); // returns 7
-console.log(increment(5)); // returns 6
+    console.log(increment(5, 2)); // returns 7
+    console.log(increment(5)); // returns 6
 
-return increment(5);
+    return increment(5);
 }
 
 function useTheRestParameterWithFunctionParameters() {
     const sum = (...args) => {
         return args.reduce((a, b) => a + b, 0);
-      }
-      console.log(sum(1, 2, 3)); // 6
-      return (sum(1, 2, 3));
+    }
+    console.log(sum(1, 2, 3)); // 6
+    return (sum(1, 2, 3));
 }
 
 function useTheSpreadOperatorToEvaluateArraysInPlace() {
     const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
-let arr2;
+    let arr2;
 
-arr2 = [...arr1];  // change this line
+    arr2 = [...arr1];  // change this line
 
-console.log(arr2);
-return arr2;
-} 
+    console.log(arr2);
+    return arr2;
+}
 
 function useDestructuringAssignmentToExtractValuesFromObjects() {
     const HIGH_TEMPERATURES = {
         yesterday: 75,
         today: 77,
         tomorrow: 80
-      };
-      
-      // change code below this line
-      
-      const {today, tomorrow} = HIGH_TEMPERATURES;
-      
-      // change code above this line
-      
+    };
+
+    // change code below this line
+
+    const { today, tomorrow } = HIGH_TEMPERATURES;
+
+    // change code above this line
+
     //   console.log(yesterday) // should be not defined
     //   console.log(today); // should be 77
     //   console.log(tomorrow); // should be 80
-      return HIGH_TEMPERATURES.tomorrow;
-    
+    return HIGH_TEMPERATURES.tomorrow;
+
 }
 
 function useDestructuringAssignmentToAssignVariablesFromObjects() {
@@ -158,18 +158,18 @@ function useDestructuringAssignmentToAssignVariablesFromObjects() {
         yesterday: 75,
         today: 77,
         tomorrow: 80
-      };
-      
-      // change code below this line
-        
-      const {today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES; 
-      
-      // change code above this line
-      
+    };
+
+    // change code below this line
+
+    const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+
+    // change code above this line
+
     //   console.log(yesterday) // should be not defined
     //   console.log(highToday); // should be 77
     //   console.log(highTomorrow); // should be 80
-      return HIGH_TEMPERATURES.today;
+    return HIGH_TEMPERATURES.today;
 }
 
 function useDestructuringAssignmentToAssignVariablesFromNestedObjects() {
@@ -177,16 +177,24 @@ function useDestructuringAssignmentToAssignVariablesFromNestedObjects() {
         yesterday: { low: 61, high: 75 },
         today: { low: 64, high: 77 },
         tomorrow: { low: 68, high: 80 }
-      };
-      
-      // change code below this line
-      const { today: {low: lowToday, high: highToday}} = LOCAL_FORECAST;
-      
-      // change code above this line
-      
-      console.log(lowToday); // should be 64
-      console.log(highToday); // should be 77
-      
+    };
+
+    // change code below this line
+    const { today: { low: lowToday, high: highToday } } = LOCAL_FORECAST;
+
+    // change code above this line
+
+    console.log(lowToday); // should be 64
+    console.log(highToday); // should be 77
+
 }
 
 
+function useDestructuringAssignmentToAssignVariablesFromArrays() {
+    let a = 8, b = 6;
+    // change code below this line
+    [a, b] = [b, a]
+    // change code above this line
+    console.log(a); // should be 6
+    console.log(b); // should be 8
+}
