@@ -199,18 +199,18 @@ function useDestructuringAssignmentToAssignVariablesFromArrays() {
     console.log(b); // should be 8
 }
 
-function UseDestructuringAssignmentWithTheRestParameterToReassignArrayElements(){
-    const source = [1,2,3,4,5,6,7,8,9,10];
-function removeFirstTwo(list) {
-  "use strict";
-  // change code below this line
-  const [a,b, ...arr] = list ; // change this
-  // change code above this line
-  return arr;
-}
-const arr = removeFirstTwo(source);
-console.log(arr); // should be [3,4,5,6,7,8,9,10]
-console.log(source); // should be [1,2,3,4,5,6,7,8,9,10];
+function UseDestructuringAssignmentWithTheRestParameterToReassignArrayElements() {
+    const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    function removeFirstTwo(list) {
+        "use strict";
+        // change code below this line
+        const [a, b, ...arr] = list; // change this
+        // change code above this line
+        return arr;
+    }
+    const arr = removeFirstTwo(source);
+    console.log(arr); // should be [3,4,5,6,7,8,9,10]
+    console.log(source); // should be [1,2,3,4,5,6,7,8,9,10];
 
 }
 
@@ -222,16 +222,16 @@ function useDestructuringAssignmentToPassAnObjectAsAFunctionsParameters() {
         mode: 23.87,
         min: -0.75,
         average: 35.85
-      };
-      
-      // change code below this line
-      const half = ({max, min}) => (max + min) / 2.0; 
-      // use function argument destructuring
-      // change code above this line
-      
-      console.log(stats); // should be object
-      console.log(half(stats)); // should be 28.015
-      
+    };
+
+    // change code below this line
+    const half = ({ max, min }) => (max + min) / 2.0;
+    // use function argument destructuring
+    // change code above this line
+
+    console.log(stats); // should be object
+    console.log(half(stats)); // should be 28.015
+
 }
 
 function createStringsUsingTemplateLiterals() {
@@ -239,27 +239,27 @@ function createStringsUsingTemplateLiterals() {
         success: ["max-length", "no-amd", "prefer-arrow-functions"],
         failure: ["no-var", "var-on-top", "linebreak"],
         skipped: ["id-blacklist", "no-dup-keys"]
-      };
-      function makeList(arr) {
+    };
+    function makeList(arr) {
         "use strict";
-      
+
         // change code below this line
         const resultDisplayArray = [];
-      
-        for(var i=0; i < arr.length; i++){
-           resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`);
+
+        for (var i = 0; i < arr.length; i++) {
+            resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`);
         }
-        
+
         // change code above this line
-      
+
         return resultDisplayArray;
-      }
-      /**
-       * makeList(result.failure) should return:
-       * [ `<li class="text-warning">no-var</li>`,
-       *   `<li class="text-warning">var-on-top</li>`,
-       *   `<li class="text-warning">linebreak</li>` ]
-       **/
+    }
+    /**
+     * makeList(result.failure) should return:
+     * [ `<li class="text-warning">no-var</li>`,
+     *   `<li class="text-warning">var-on-top</li>`,
+     *   `<li class="text-warning">linebreak</li>` ]
+     **/
     const resultDisplayArray = makeList(result.failure);
     return resultDisplayArray;
 }
@@ -268,10 +268,10 @@ function writeConciseObjectLiteralDeclarationsUsingObjectPropertyShorthand() {
     const createPerson = (name, age, gender) => {
         "use strict";
         // change code below this line
-        return ({ name, age, gender});
-          
+        return ({ name, age, gender });
+
         // change code above this line
-      };
-      console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
-      
+    };
+    console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+
 }
