@@ -1093,41 +1093,40 @@ function useMultipleConditionalOperators() {
     function checkSign(num) {
         return (num > 0) ? "positive"
             : (num < 0) ? "negative"
-            : "zero"; 
-            
+                : "zero";
+
     }
-    
-    checkSign(10);   
+
+    checkSign(10);
 }
 
-function useRecursiontoCreateCountdown(){
+function useRecursiontoCreateCountdown() {
     //Only change code below this line
-function countdown(n){
-    if(n < 1){
-      return [];
+    function countdown(n) {
+        if (n < 1) {
+            return [];
+        }
+        else {
+            var arr = countdown(n - 1)
+            arr.unshift(n)
+            return arr;
+        }
+
     }
-    else{
-      var arr = countdown(n-1)
-      arr.unshift(n)
-      return arr;
-    }
-   
-  }
-  console.log(countdown(5)); // [5, 4, 3, 2, 1]
-  
+    console.log(countdown(5)); // [5, 4, 3, 2, 1]
+
 }
 
-function useRecursiontoCreateaRangeofNumbers(){
+function useRecursiontoCreateaRangeofNumbers() {
     function rangeOfNumbers(startNum, endNum) {
 
         if (endNum - startNum === 0) {
-          return [startNum];
-        } 
-        else 
-        {
-          var numbers = rangeOfNumbers(startNum, endNum - 1);
-          numbers.push(endNum);
-          return numbers;
+            return [startNum];
         }
-      }
+        else {
+            var numbers = rangeOfNumbers(startNum, endNum - 1);
+            numbers.push(endNum);
+            return numbers;
+        }
+    }
 }
