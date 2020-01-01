@@ -29,3 +29,11 @@ stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
 
 }
+
+
+function () {
+    export default function subtract(x, y) {
+        return x - y;
+      }
+      
+}
