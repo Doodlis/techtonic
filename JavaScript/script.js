@@ -1060,3 +1060,13 @@ function generateRandomWholeNumbersWithinARange() {
 
 
 }
+
+
+function useTheParseIntFunction() {
+    function convertToInteger(str) {
+        return parseInt(str)
+    }
+
+    convertToInteger("56");
+
+}
