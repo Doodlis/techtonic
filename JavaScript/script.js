@@ -1088,3 +1088,15 @@ function useTheConditionalOperator() {
     checkEqual(1, 2);
 
 }
+
+function useMultipleConditionalOperators() {
+    function checkSign(num) {
+        return (num > 0) ? "positive"
+            : (num < 0) ? "negative"
+            : "zero"; 
+            
+    }
+    
+    checkSign(10);
+    
+}
