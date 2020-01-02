@@ -1,63 +1,117 @@
 <!DOCTYPE html>
 
 <html>
-  
-  <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-  
-  </head>
-  <style>
-    @media screen and (max-width: 600px)
-      {
-       .nav-link {background-color:green;}
-       
-     }
-     </style>
-  
-  <body>
-    
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <nav id="navbar">Navigation Menu
-      <a class="nav-link" href="#welcome-section">welcome section</a>
-      <a class="nav-link" href="#page-end">page end</a>
-    </nav>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <section id="welcome-section">
-     <h1>Welcome</h1> 
+
+</head>
+<style>
+  @media screen and (max-width: 600px) {
+    .nav-link {
+      background-color: green;
+    }
+
+  }
+</style>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <nav id="navbar">
+    <a class="nav-link" href="#welcome-section">ABOUT ME</a>
+    <a class="nav-link" href="#projects">PROJECTS</a>
+    <a class="nav-link" href="#page-end">CONTACT</a>
+  </nav>
+
+  <div id="container">
+    <section id="welcome-section" class="section">
+      <h1>.</h1>
+      <div id="name">Hello, My name is Kornelija</div>
+      <div id="subname">Web Developer</div>
     </section>
 
-    <section id="projects">
-      <div class="project-tile">
-        
-        <a href="https://www.pexels.com/search/cat/" target="_blank">Link to cat photos</a>
-     </div>
+    <section id="projects" class="section">
+      <div id="project-grid">
+        <div class="project-tile">
+          <div class="image-container">
+            <a href="https://github.com/Doodlis/techtonic-apprenticeship-initial-pre-work/tree/master/Survey_form"
+              target="_blank">
+              <img class="project-image" src="surveyimage.jpg" alt="project">
+              <div class="overlay">
+                <div class="text">Survey Page</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-     <div class="project-tile">
-        
-      <a href="https://www.pexels.com/search/cat/" target="_blank">Link to cat photos</a>
-   </div>
+        <div class="project-tile">
+          <div class="image-container">
+            <a href="https://github.com/Doodlis/techtonic-apprenticeship-initial-pre-work/tree/master/Landing_page"
+              target="_blank">
+              <img class="project-image" src="landingpageimage.jpg" alt="project">
+              <div class="overlay">
+                <div class="text">Product Page</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-   <div class="project-tile">
-        
-    <a href="https://www.pexels.com/search/cat/" target="_blank">Link to cat photos</a>
- </div>
+        <div class="project-tile">
+          <div class="image-container">
+            <a href="https://github.com/Doodlis/techtonic-apprenticeship-initial-pre-work/tree/master/Tribute_page/"
+              target="_blank">
+              <img class="project-image" src="tributeimage.jpg" alt="project">
+              <div class="overlay">
+                <div class="text">Tribute Page</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
- <div id="for-profile-link">
-   <a id="profile-link" href="https://codepen.io/Doodlis" target="_blank">Link to my Codepen profile</a>
- </div>
-     </section>
-     
+        <div class="project-tile">
+          <div class="image-container">
+            <a href="https://github.com/Doodlis/techtonic-apprenticeship-initial-pre-work/tree/master/Technical_documentation_page"
+              target="_blank">
+              <img class="project-image" src="techimage.jpg" alt="project">
+              <div class="overlay">
+                <div class="text">Tech Page</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-     <section id="page-end">Page end</section>
-     
-    
+        <div class="project-tile">
+          <a id="profile-link" href="https://github.com/Doodlis/" target="_blank">
+            <div class="overlay-visible">
+              <div class="text-visible">
+                SEE MORE
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="page-end" class="section">
+      <div id="contact-message">How about we work together?</div>
+      <a href="https://github.com/Doodlis/" target="_blank">
+        <i class="fab fa-github contact-icon"></i>
+      </a>
+  </div>
+  </section>
+  </div>
 
 
-  </body>
+</body>
 
 
 </html>
