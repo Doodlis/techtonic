@@ -14,7 +14,10 @@ lessons you struggled with below:
 **Create a Form Element**
 - I have struggled to nest text field inside a form element,
  sipmly because I wrote: "<form action="/submit cat photo"" 
-without > before starting input line.  
+without > before starting input line.
+
+**Update**
+- So far, so good.  
 
 **Override Class Declarations by Styling ID Attributes**
 - "#orange-text;

@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h2>CatPhotoApp</h2>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    
+    <style>
+        .red-text
+        {color:red;}
+        p
+        {font-size:16px; font-family:monospace;}
+        h2
+        {font-family:Lobster, monospace;}
+        .smaller-image 
+        {width:100px}
+        .thick-green-border
+        {border-width:10px;border-style:solid; border-color:green; border-radius:10px;}
+        .silver-background
+        {background-color:silver;}
+        #cat-photo-form
+        {background-color: green;}
+    </style>
+    <h2 class="red-text">CatPhotoApp</h2>
 </head>
 <body> 
     
         <main>
-            <p>Click here to view more <a href="#"></a><img src="https://bit.ly/fcc-relaxing-cat" alt="Ginger kitty relaxing."></a></p>
-            <div>
+            <p class="red-text">Click here to view more 
+                <a href="#"></a><img style="border-radius:50%" class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="Ginger kitty relaxing."></a></pclass="red-text">
+            <div class="silver-background">
             <p>Things cats love:</p>
             <ul>
                 <li>cat nip</li>
@@ -21,7 +41,7 @@
                  <li>mice</li>
                 </ol>
             </div>
-                <form action="/submit-cat-photo">
+                <form id="cat-photo-form" action="/submit-cat-photo">
                     <input type="text" required placeholder="cat photo URL">
                     <button type="submit">Submit</button><br>
                     <label for="indoor">
