@@ -1,5 +1,5 @@
 /* previuos exercises were commited over existing code, 
-and unfortunately I ran out of time to put it in this list.*/
+and unfortunately I ran out of time to write it backin this list.*/
 
 function nextInLineAssignment() {
 
