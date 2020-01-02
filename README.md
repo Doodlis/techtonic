@@ -14,12 +14,15 @@ lessons you struggled with below:
 **Create a Form Element**
 - I have struggled to nest text field inside a form element,
  sipmly because I wrote: "<form action="/submit cat photo"" 
-without > before starting input line.
-
-**Update**
-- So far, so good.  
+without > before starting input line.  
 
 **Override Class Declarations by Styling ID Attributes**
 - "#orange-text;
   {color:orange;}" 
-  I could not understand why this command wasn't overriding class declarations, until I saw my mistake - ";" after "#orange-text" .
+  I could not understand why this command wasn't overriding 
+class declarations, until I saw my mistake - ";" after "#orange-text" .
+
+**JavaScript**
+- I have struggled with JavaScript quite a bit. At the begginign it was mostly due 
+to such a loose language, it was hard to understantd what is the actual JavaScript syntax,
+ what's just plain English languge that can be anything.  
