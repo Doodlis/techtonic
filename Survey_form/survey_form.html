@@ -1,83 +1,76 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    
-    <h1 id="title">Survey</h1>
-   
-    <p id="description">Help us improve the platform</p>
-    
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <div id="container">
+    <header>
+      <h1 id="title">Survey</h1>
+
+      <p id="description">Help us improve the platform</p>
+    </header>
+
     <form id="survey-form">
-     
-      <input 
-      id="name"
-      type="text"
-      required
-      placeholder="Enter your name here">
-       <label id="name-label">Your Name</label>
-      </input>
-      
-      <input 
-      id="email"
-      type="email"
-      required
-      placeholder="Enter your email here">
-       <label id="email-label">Email</label>
-     </input>
-      
-     <input  
-      id="number"
-      type="number"
-      min="18" max="99"
-      placeholder="Enter your number here">
-       <label id="number-label">Number</label>
-      </input>
-      
-      <select
-      id="dropdown">Select 
-       <option value="1">1</option>
-       <option value="2">2</option>
-      </select>
-    
-      <input type="radio" name="role" value="1">1
-      <input type="radio" name="role" value="2">2
-      <input type="radio" name="role" value="3">3
 
-      <input type="checkbox" value="1">1
-      <input type="checkbox" value="2">2
-      <input type="checkbox" value="3">3
-      <input type="checkbox" value="4">4
-      <input type="checkbox" value="5">5
-      <input type="checkbox" value="6">6
+      <div class="field-group">
+        <input id="name" type="text" required placeholder="Enter your name here">
+        <label id="name-label">Your Name</label>
+        </input>
+      </div>
 
-      <textarea rows="10" cols="50">
-      </textarea>
+      <div class="field-group">
+        <input id="email" type="email" required placeholder="Enter your email here">
+        <label id="email-label">Email</label>
+        </input>
+      </div>
 
-      <button id="submit" type="submit" value="submit">
-      
-    
+      <div class="field-group">
+        <input id="number" type="number" min="18" max="99" width="1000" placeholder="Enter your number here">
+        <label id="number-label">Number</label>
+        </input>
+      </div>
 
+      <div class="field-group">
+        <select id="dropdown">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <label for="dropdown">Select</label>
+      </div>
 
+      <div class="field-group">
+        <input type="radio" id="radio1" name="role" value="1">
+        <label for="radio1">Choice 1</label>
+        <input type="radio" id="radio2" name="role" value="2">
+        <label for="radio2">Choice 2</label>
+        <input type="radio" id="radio3" name="role" value="3">
+        <label for="radio3">Choice 3</label>
+      </div>
 
+      <div class="field-group">
+        <div id="checkboxLabel">Check All That Apply</div>
+        <input type="checkbox" value="1">1
+        <input type="checkbox" value="2">2
+        <input type="checkbox" value="3">3
+        <input type="checkbox" value="4">4
+        <input type="checkbox" value="5">5
+        <input type="checkbox" value="6">6
+      </div>
 
-    </form>
+      <textarea rows="10" cols="50"></textarea>
 
-    
+      <div class="field-group">
+        <button id="submit" type="submit" value="submit">Submit</button>
+      </div>
 
+  </div>
+  </form>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-  </body>
+</body>
 
 </html>
