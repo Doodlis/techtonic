@@ -96,7 +96,7 @@ a.nav-link:hover {
   grid-template-columns: auto auto auto;
   display: inline-grid;
   grid-gap: 50px;
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 
 .overlay {
