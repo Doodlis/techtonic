@@ -1,3 +1,6 @@
+/* previuos exercises were coommited over existing code, 
+and unfortunately I ran out of time to put it in this list.*/
+
 function nextInLineAssignment() {
 
     function nextInLine(arr, item) {
